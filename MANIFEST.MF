@@ -1,0 +1,4 @@
+Built-By: Franc Zobo Nomo
+Product-Name:  File Explorer App
+Main-Class: fr.univ_paris_diderot.file_explorer.ApplicationGUI
+Class-Path: ../ ../libs/gson-2.10.1.jar ../libs/commons-io-2.16.0.jar

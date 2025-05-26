@@ -1,0 +1,351 @@
+
+<synth>
+
+	<!-- ***** ***** ***** Style Principal ***** ***** ***** -->
+	<!-- *************************************************** -->
+
+	<!-- Le style global du theme -->
+	<style id="globalStyle">
+		<color id="colWhite" value="#000000"/>
+		<property key="ScrollBar.thumb" value="colWhite"/>
+		<font name="Roboto Mono" size="14"/>
+	</style>
+	<bind style="globalStyle" type="region" key=".*"/>
+
+	<!-- Le style global d'un panneau scrolllable -->
+	<style id="scrollBarStyle">
+		<opaque value="TRUE"/>
+		<color id="col1" value="#ffffff" type="BACKGROUND"/>
+		<color id="col2" value="#ffffff" type="BACKGROUND"/>
+		<state>
+			<property key="ScrollBar.thumb" value="col1"/>
+		</state>
+	</style>
+	<bind style="scrollBarStyle" type="region" key="ScrollBar"/>
+
+	<!-- Le panel global-->
+	<style id="mainPaneStyle">
+		<opaque value="TRUE"/>
+		<state>
+			<color value="#ffffff" type="BACKGROUND" />
+		</state>
+	</style>
+	<bind style="mainPaneStyle" type="name" key="mainPane"/>
+
+	<!-- Le style du panel affiachant un nom de fichier -->
+	<style id="fileSelectionStyle">
+		<opaque value="TRUE"/>
+		<insets left="10" right="10" />
+		<state>
+			<color value="#ffffff" type="BACKGROUND" />
+			<color value="#871436" type="FOREGROUND" />
+		</state>
+	</style>
+	<bind style="fileSelectionStyle" type="name" key="fileSelector"/>
+
+	<!-- Le style du panel affiachant un nom du répertoire -->
+	<style id="folderSelectionStyle">
+		<opaque value="TRUE"/>
+		<insets left="10" right="10" />
+		<state>
+			<color value="#ffffff" type="BACKGROUND" />
+			<color value="#871436" type="FOREGROUND" />
+		</state>
+	</style>
+	<bind style="folderSelectionStyle" type="name" key="folderSelector"/>
+
+	<!-- Le style global d'un bouton -->
+	<style id="mainButtonStyle">
+		<opaque value="TRUE" />
+		<insets left="8" top="5" right="8" bottom="5"/>
+		<state>
+			<color value="#871436" type="BACKGROUND" />
+		</state>
+	</style>
+	<bind style="mainButtonStyle" type="region" key="Button"/>
+
+
+	<!-- ***** ***** *** Style Visualisation *** ***** ***** -->
+	<!-- *************************************************** -->
+
+	<style id="contentNothingStyle">
+		<opaque value="TRUE"/>
+		<insets left="10" right="10" />
+		<state>
+			<color value="#D3D3D3" type="BACKGROUND" />
+			<color value="#484848" type="FOREGROUND" />
+		</state>
+	</style>
+	<bind style="contentNothingStyle" type="name" key="contentNothing"/>
+
+	<style id="contentViewStyle">
+		<opaque value="TRUE"/>
+		<insets left="10" right="10" />
+		<state>
+			<color value="#ffffff" type="BACKGROUND" />
+		</state>
+	</style>
+	<bind style="contentViewStyle" type="name" key="contentView"/>
+
+	<style id="contentViewLeftStyle">
+		<opaque value="TRUE"/>
+		<insets left="5" top="5" bottom="5" />
+		<state>
+			<color value="#ffffff" type="BACKGROUND" />
+			<color value="#871436" type="FOREGROUND" />
+		</state>
+	</style>
+	<bind style="contentViewLeftStyle" type="name" key="contentViewLeft"/>
+
+	<style id="viewerGlobalStyle">
+		<opaque value="TRUE"/>
+		<insets left="10" right="10" top="10" bottom="10" />
+		<state>
+			<color value="#ffffff" type="BACKGROUND" />
+		</state>
+	</style>
+	<bind style="viewerGlobalStyle" type="name" key="viewerGlobal"/>
+
+
+	<!-- ***** ***** ****** Style Favoris ****** ***** ***** -->
+	<!-- *************************************************** -->
+
+	<!-- Le style du titre de favoris -->
+	<style id="favTitleStyle">
+		<opaque value="TRUE" />
+		<insets left="20" top="5" right="20" bottom="5"/>
+		<font name="Open Sans" size="17" style="BOLD"/>
+		<state>
+			<color value="#430a1b" type="BACKGROUND" />
+			<color value="#ffffff" type="FOREGROUND" />
+		</state>
+	</style>
+	<bind style="favTitleStyle" type="name" key="favTitle" />
+
+	<!-- LE style de la liste des favoris -->
+	<style id="favoritesFilesPaneStyle">
+		<opaque value="TRUE" />
+		<insets left="10" top="10" right="10" bottom="10"/>
+		<state>
+			<color value="#430a1b" type="BACKGROUND" />
+			<color value="#ffffff" type="FOREGROUND" />
+		</state>
+	</style>
+	<bind style="favoritesFilesPaneStyle" type="name" key="favoritesFilesPane" />
+
+	<!-- Style de la bar affichant la liste de favoris -->
+	<style id="favoritesFilesPaneScrollBarStyle" >
+		<opaque value="TRUE"/>
+		<state>
+			<color value="#ffffff" type="BACKGROUND" />
+			<color value="#000000" type="FOREGROUND" />
+		</state>
+	</style>
+	<bind style="favoritesFilesPaneScrollBarStyle" type="name" key="favoritesFilesPaneScrollBar" />
+
+
+
+	<!-- ***** ***** ***** Style Navigation **** ***** ***** -->
+	<!-- *************************************************** -->
+
+	<style id="navigationScrollPaneStyle">
+		<opaque value="TRUE"/>
+		<insets left="10" right="10" bottom="10" top="10"/>
+	</style>
+	<bind style="navigationScrollPaneStyle" type="name" key="navigationScrollPane" />
+
+	<style id="navigationScrollBarStyle">
+		<opaque value="TRUE"/>
+		<color id="thumbarColor" value="#ffffff" type="BACKGROUND"/>
+		<property key="ScrollBar.thumbColor" value="thumbarColor"/>
+		<state>
+			<color value="#871436" type="BACKGROUND"/>
+			<color value="#ffffff" type="TEXT_FOREGROUND"/>
+		</state>
+	</style>
+	<bind style="navigationScrollBarStyle" type="name" key="navigationScrollBar" />
+
+	<style id="filesPaneStyle">
+		<insets left="10" top="10" right="10" bottom="10"/>
+	</style>
+	<bind style="filesPaneStyle" type="name" key="filesPane" />
+
+	<style id="filesPaneScrollBarStyle" >
+		<opaque value="TRUE"/>
+		<state>
+			<color value="#000000" type="BACKGROUND" />
+			<color value="#ffffff" type="FOREGROUND" />
+		</state>
+	</style>
+	<bind style="filesPaneScrollBarStyle" type="name" key="filesPaneScrollBar" />
+
+	<style id="fileLabelStyle">
+	</style>
+	<bind style="fileLabelStyle" type="name" key="fileLabel" />
+
+
+
+	<!-- ***** ***** *** Style des paramètre *** ***** ***** -->
+	<!-- *************************************************** -->
+
+	<!-- Le style poour l'arrière plan de l'écran de paramètres -->
+	<style id="settingsPaneStyle">
+		<opaque value="TRUE"/>
+		<insets left="10" right="10" top="10" bottom="10"/>
+		<state>
+			<color value="#ffffff" type="BACKGROUND" />
+		</state>
+	</style>
+	<bind style="settingsPaneStyle" type="name" key="settingsPane" />
+
+	<style id="tagContainerStyle">
+	</style>
+	<bind style="tagContainerStyle" type="name" key="tagContainer" />
+
+	<!-- Le style d'un bouton de validation -->
+	<style id="confirmButtonStyle">
+		<opaque value="TRUE"/>
+		<state>
+			<color value="#006400" type="BACKGROUND"/>
+		</state>
+	</style>
+	<bind style="confirmButtonStyle" type="name" key="confirmButton" />
+
+	<!-- Le style d'un bouton d'annulation -->
+	<style id="cancelButtonStyle">
+		<opaque value="TRUE"/>
+		<state>
+			<color value="#EF0107" type="BACKGROUND"/>
+		</state>
+	</style>
+	<bind style="cancelButtonStyle" type="name" key="cancelButton" />
+
+	<!-- Le style une l'étiquette  -->
+	<style id="tagStyle">
+		<opaque value="TRUE"/>
+		<insets top="3" bottom="3" left="3" right="3" />
+		<font name="Roboto Mono" size="10" style="BOLD"/>
+		<state>
+			<color value="#696969" type="FOREGROUND"/>
+			<color value="#D3D3D3" type="BACKGROUND"/>
+		</state>
+	</style>
+	<bind style="tagStyle" type="name" key="tag" />
+
+	<!-- Le style pour un bouton de fermeture d'étiquette -->
+	<style id="tagCloseStyle">
+		<opaque value="FALSE"/>
+	</style>
+	<bind style="tagCloseStyle" type="name" key="tagClose" />
+
+	<!-- Le style pour une étiquette -->
+	<style id="tagTitleStyle">
+		<opaque value="TRUE" />
+		<font name="Open Sans" size="17" style="BOLD"/>
+		<state>
+			<color value="#871436" type="FOREGROUND"/>
+		</state>
+	</style>
+	<bind style="tagTitleStyle" type="name" key="tagTitle" />
+
+	<!-- Le Style pour le checkbox-->
+	<style id="checkBoxSettingsStyle">
+		<opaque value="TRUE"/>
+		<font name="Roboto Mono" size="14"/>
+		<imageIcon id="check_off" path="res/images/icon_unselected_14px_diderot.png"/>
+		<imageIcon id="check_on" path="res/images/icon_selected_14px_diderot.png"/>
+		<property key="CheckBox.icon" value="check_off"/>
+		<state value="SELECTED">
+			<property key="CheckBox.icon" value="check_on"/>
+		</state>
+	</style>
+	<bind style="checkBoxSettingsStyle" type="name" key="checkBoxSettings" />
+
+
+
+	<!-- ***** ***** ** Style de la recherche ** ***** ***** -->
+	<!-- *************************************************** -->
+
+	<!-- Style pour la fenetre contextuel -->
+	<style id="customWindowStyle">
+		<opaque value="TRUE"/>
+		<insets top="10" left="10" right="10" bottom="10"/>
+		<state>
+			<color value="#ffffff" type="BACKGROUND"/>
+		</state>
+	</style>
+	<bind style="customWindowStyle" type="name" key="customWindow" />
+
+
+	<!-- **** *** *** Style du menu contexxtuel *** *** **** -->
+	<!-- *************************************************** -->
+
+	<!-- Le style d'item menu contextuel pour un fichier -->
+	<style id="filePopUpFavoriteItemStyle">
+		<opaque value="TRUE"/>
+		<insets top="5" bottom="5" left="10" right="10"/>
+		<state>
+			<color value="#871436" type="FOREGROUND"/>
+			<color value="#ffffff" type="BACKGROUND"/>
+		</state>
+	</style>
+	<bind style="filePopUpFavoriteItemStyle" type="name" key="filePopUpFavoriteItem" />
+
+	<!-- Le style d'item menu contextuel pour un fichier -->
+	<style id="filePopUpItemStyle">
+		<opaque value="TRUE"/>
+		<insets top="5" bottom="5" left="10" right="10"/>
+		<state>
+			<color value="#000000" type="FOREGROUND"/>
+			<color value="#ffffff" type="BACKGROUND"/>
+		</state>
+	</style>
+	<bind style="filePopUpItemStyle" type="name" key="filePopUpItem" />
+
+	<!-- Le style d'item de menu contextuel pour un fichier -->
+	<style id="filePopUpItemDeleteStyle">
+		<opaque value="TRUE"/>
+		<insets top="5" bottom="5" left="10" right="10"/>
+		<state>
+			<color value="#ff0000" type="FOREGROUND"/>
+			<color value="#ffffff" type="BACKGROUND"/>
+		</state>
+	</style>
+	<bind style="filePopUpItemDeleteStyle" type="name" key="filePopUpItemDelete" />
+
+
+	<!-- ** *** * Style pour les fenetre permission * *** ** -->
+	<!-- *************************************************** -->
+
+	<!-- Le style d'un sous titre -->
+	<style id="permissionRootStyle">
+		<opaque value="TRUE"/>
+		<insets top="10" bottom="10" left="10" right="10" />
+		<state>
+			<color value="#ffffff" type="BACKGROUND"/>
+		</state>
+	</style>
+	<bind style="permissionRootStyle" type="name" key="permissionRoot" />
+
+	<!-- Le style d'un sous titre -->
+	<style id="permissionTitleStyle">
+		<opaque value="TRUE"/>
+		<state>
+			<color value="#871436" type="FOREGROUND"/>
+			<color value="#ffffff" type="BACKGROUND"/>
+		</state>
+	</style>
+	<bind style="permissionTitleStyle" type="name" key="permissionTitle" />
+
+	<!-- Le style du rendu du combo box par défaut -->
+	<style id="comboBoxRendererStyle">
+		<opaque value="TRUE"/>
+		<insets left="10" right="10" top="10" bottom="10" />
+		<state>
+			<color type="BACKGROUND" value="#ffffff"/>
+		</state>
+	</style>
+	<bind style="comboBoxRendererStyle" type="name" key="comboBoxRenderer" />
+
+
+</synth>
